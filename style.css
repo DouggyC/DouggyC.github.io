@@ -1,0 +1,109 @@
+/* Global Styles */
+
+/* Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Utilities */
+
+/* Borders */
+.bb {
+  border: 1px solid blue;
+}
+.br {
+  border: 1px solid red;
+}
+.bg {
+  border: 1px solid green;
+}
+.bp {
+  border: 1px solid purple;
+}
+.bv {
+  border: 1px solid violet;
+}
+
+/* Background-Color */
+.bgy {
+  background-color: yellow;
+}
+.bga {
+  background-color: aqua;
+}
+.bgf {
+  background-color: fuchsia;
+}
+.bgg {
+  background-color: grey;
+}
+.bgl {
+  background-color: lime;
+}
+
+/* Z-Index */
+.z1 {
+  z-index: 1;
+}
+.z5 {
+  z-index: 5;
+}
+.z10 {
+  z-index: 10;
+}
+
+/* Grid Center */
+.grid-true-center {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Flex Center */
+.flex-true-center {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+}
+
+/* Clearfix */
+.cf {
+  overflow: hidden;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+  height: 100vh;
+}
+
+div > div {
+  display: inline-block;
+  float: left;
+  z-index: 2;
+  height: 100px;
+  position: relative;
+}
+
+span {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 15vw 0 0;
+  border-color: aqua transparent transparent transparent;
+}
+
+img:hover {
+  z-index: 1;
+  transition-duration: 5s;
+  transform: scale(1.7);
+  transform-origin: right bottom;
+  transition-timing-function: ease-in-out;
+  /* animation-fill-mode: both; */
+}
